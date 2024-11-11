@@ -4,12 +4,14 @@ h1{
  text-align: center;
 }
 
+
+
 a{
  color:rgb(255, 255, 255);
  text-decoration: none;
 }
 body {
- background-image: url("backgroundr6.webp"); /* Imagem de fundo */
+ background-image: url("Pagina R6/Principal/backgroundr6.webp"); /* Imagem de fundo */
  background-repeat: no-repeat;
  background-size: cover; /* Faz com que a imagem ocupe todo o fundo */
  background-position: center; /* A imagem fica centralizada */
@@ -19,13 +21,14 @@ body {
  height: 500vh; /* Garante que o body ocupe 100% da altura da tela */
  margin: 0;
  padding: 0;
+
 }
 
 .liquid {
  padding: 0px;
 background-size: cover; /* Faz com que a imagem ocupe todo o fundo */
 color: white;
-background-image: url("../liquid/imagens/linecompleta.webp");
+background-image: url("Pagina R6/liquid/imagens/linecompleta.webp");
 background-position: start;
 background-repeat: no-repeat; /* A imagem não se repete */
 margin: 0 auto; /* Remove a margem padrão do body */
@@ -40,7 +43,7 @@ align-items: center; /* Alinha o texto ao centro */
 padding: 0px;
 background-size: cover; /* Faz com que a imagem ocupe todo o fundo */
 color: white;
-background-image: url("../Faze/imagens/fazecompleta.jpg"); 
+background-image: url("Pagina R6/Faze/imagens/fazecompleta.jpg"); 
 background-position: start; /* A imagem fica centralizada */
 background-repeat: no-repeat; /* A imagem não se repete */
 margin: 0 auto; /* Remove a margem padrão do body */
@@ -61,7 +64,7 @@ align-items: center;
  margin-left: 7%;
  width: 128%; /* Ocupa toda a largura da caixa externa */
  height: 30vh; /* Ajuste da altura da imagem */
- background-color: rgb(20, 19, 19); /* Cor de fundo da caixa interna */
+ background-color: black; /* Cor de fundo da caixa interna */
  border-radius: 10px; /* Arredonda os cantos */
  display: flex;
  justify-content: center;
@@ -73,11 +76,11 @@ align-items: center;
  margin-left: 7%;
  width: 105%; /* Ocupa toda a largura da caixa externa */
  height: 30vh; /* Ajuste da altura da imagem */
- background-color: rgb(20, 19, 19); /* Cor de fundo da caixa interna */
+ background-color: black; /* Cor de fundo da caixa interna */
  border-radius: 10px; /* Arredonda os cantos */
  display: flex; /* Flexbox para centralizar o texto */
  justify-content: center; /* Centraliza o conteúdo horizontalmente */
- align-items: end; 
+ align-items: end;
  position: relative; /* Define o contexto de posicionamento do .texto */
 }
 
@@ -109,8 +112,4 @@ align-items: center;
 .imgfaze {
  position: relative; /* Posicionamento absoluto em relação ao .png */
  margin-bottom: 14%;
-}
-
-img:hover {
- transform: scale(1.1); /* Efeito de escala ao passar o mouse */
 }
