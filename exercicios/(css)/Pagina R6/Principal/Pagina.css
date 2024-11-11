@@ -54,14 +54,19 @@ align-items: center;
 .container {
  position: relative; /* Permite que o .texto seja posicionado em relação ao .png */
  display: inline-block;
+ border-radius: 10px;
+ border-color: black;
+ border-style: solid;
+ margin-left: 1%;
+ width: 15%; /* Largura da caixa */
+ height: 80%;
 }
 
 /* Configurações da caixa de imagem .png */
 .caixaliquid {
- margin-left: 7%;
- width: 128%; /* Ocupa toda a largura da caixa externa */
+ width: 100%; /* Ocupa toda a largura da caixa externa */
  height: 30vh; /* Ajuste da altura da imagem */
- background-color: rgb(20, 19, 19); /* Cor de fundo da caixa interna */
+ background-color: rgba(20, 19, 19, 0); /* Cor de fundo da caixa interna */
  border-radius: 10px; /* Arredonda os cantos */
  display: flex;
  justify-content: center;
@@ -70,10 +75,9 @@ align-items: center;
 }
 
 .caixafaze {
- margin-left: 7%;
- width: 105%; /* Ocupa toda a largura da caixa externa */
+ width: 100%; /* Ocupa toda a largura da caixa externa */
  height: 30vh; /* Ajuste da altura da imagem */
- background-color: rgb(20, 19, 19); /* Cor de fundo da caixa interna */
+ background-color: rgba(20, 19, 19, 0); /* Cor de fundo da caixa interna */
  border-radius: 10px; /* Arredonda os cantos */
  display: flex; /* Flexbox para centralizar o texto */
  justify-content: center; /* Centraliza o conteúdo horizontalmente */
@@ -83,7 +87,7 @@ align-items: center;
 
 .textoliquid {
  position: absolute; /* Posicionamento absoluto em relação ao .png */
- top: -10px; /* Posiciona o texto 40px acima da imagem */
+ top: -12px; /* Posiciona o texto 40px acima da imagem */
  left: 50%; /* Centraliza o texto horizontalmente */
  transform: translateX(-50%); /* Ajuste para centralizar no meio da imagem */
  font-size: 30px; /* Tamanho da fonte */
@@ -111,6 +115,6 @@ align-items: center;
  margin-bottom: 14%;
 }
 
-img:hover {
+.container:hover {
  transform: scale(1.1); /* Efeito de escala ao passar o mouse */
 }
