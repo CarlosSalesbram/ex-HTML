@@ -1,115 +1,115 @@
 @charset "UTF-8";
 
-h1{
- text-align: center;
+h1 {
+  text-align: center;
 }
 
-
-
-a{
- color:rgb(255, 255, 255);
- text-decoration: none;
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
+
 body {
- background-image: url("Pagina R6/Principal/backgroundr6.webp"); /* Imagem de fundo */
- background-repeat: no-repeat;
- background-size: cover; /* Faz com que a imagem ocupe todo o fundo */
- background-position: center; /* A imagem fica centralizada */
- color: white;  /* Cor da fonte */
- font-family: Arial, Helvetica, sans-serif; /* Fonte do texto */
- background-attachment: fixed; /* Faz com que a imagem permaneça fixa no fundo enquanto os conteudos da pagina passam por cima dela */
- height: 500vh; /* Garante que o body ocupe 100% da altura da tela */
- margin: 0;
- padding: 0;
-
+  background-image: url("backgroundr6.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
 }
 
-.liquid {
- padding: 0px;
-background-size: cover; /* Faz com que a imagem ocupe todo o fundo */
-color: white;
-background-image: url("Pagina R6/liquid/imagens/linecompleta.webp");
-background-position: start;
-background-repeat: no-repeat; /* A imagem não se repete */
-margin: 0 auto; /* Remove a margem padrão do body */
-height: 40vh; /* Garante que o body ocupe 100% da altura da tela */
-width: 1400px; /* Largura do body */
-border-radius: 15px; /* Arredonda os cantos */
-display: flex; /* Flexbox para centralizar o texto */
-justify-content: flex-start; /* Alinha o texto à esquerda */
-align-items: center; /* Alinha o texto ao centro */
+/* Ajuste da largura do .liquid e .faze para ocupar toda a tela em dispositivos menores */
+.liquid, .faze {
+  padding: 0;
+  background-size: cover;
+  color: white;
+  background-position: start;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  height: 40vh;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-.faze {
-padding: 0px;
-background-size: cover; /* Faz com que a imagem ocupe todo o fundo */
-color: white;
-background-image: url("Pagina R6/Faze/imagens/fazecompleta.jpg"); 
-background-position: start; /* A imagem fica centralizada */
-background-repeat: no-repeat; /* A imagem não se repete */
-margin: 0 auto; /* Remove a margem padrão do body */
-height: 40vh; /* Garante que o body ocupe 100% da altura da tela */
-width: 1400px;
-border-radius: 15px; /* Arredonda os cantos */
-display: flex;
-justify-content: flex-start;
-align-items: center;
-}
+
+/* Ajuste da largura da .container para caber melhor em telas menores */
 .container {
- position: relative; /* Permite que o .texto seja posicionado em relação ao .png */
- display: inline-block;
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+  margin-left: 1%;
+  width: 20%;
+  height: auto;
+  max-width: 300px; /* Limita a largura máxima da .container */
 }
 
-/* Configurações da caixa de imagem .png */
-.caixaliquid {
- margin-left: 7%;
- width: 128%; /* Ocupa toda a largura da caixa externa */
- height: 30vh; /* Ajuste da altura da imagem */
- background-color: black; /* Cor de fundo da caixa interna */
- border-radius: 10px; /* Arredonda os cantos */
- display: flex;
- justify-content: center;
- align-items: end;
- position: relative; /* Define o contexto de posicionamento do .texto */
+.caixaliquid, .caixafaze {
+  width: 100%;
+  height: 30vh;
+  background-color: rgba(20, 19, 19, 0);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  position: relative;
 }
 
-.caixafaze {
- margin-left: 7%;
- width: 105%; /* Ocupa toda a largura da caixa externa */
- height: 30vh; /* Ajuste da altura da imagem */
- background-color: black; /* Cor de fundo da caixa interna */
- border-radius: 10px; /* Arredonda os cantos */
- display: flex; /* Flexbox para centralizar o texto */
- justify-content: center; /* Centraliza o conteúdo horizontalmente */
- align-items: end;
- position: relative; /* Define o contexto de posicionamento do .texto */
+.textoliquid, .textofaze {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
 }
 
-.textoliquid {
- position: absolute; /* Posicionamento absoluto em relação ao .png */
- top: -10px; /* Posiciona o texto 40px acima da imagem */
- left: 50%; /* Centraliza o texto horizontalmente */
- transform: translateX(-50%); /* Ajuste para centralizar no meio da imagem */
- font-size: 30px; /* Tamanho da fonte */
- text-align: center; /* Centraliza o texto */
- color: white; /* Cor do texto */
+.imgliquid, .imgfaze {
+  position: relative;
+  margin-bottom: 12%;
 }
 
-.textofaze {
- position: absolute; /* Posicionamento absoluto em relação ao .png */
- top: 25px; /* Posiciona o texto 20px acima da imagem */
- left: 50%; /* Centraliza o texto horizontalmente */
- transform: translateX(-50%); /* Ajuste para centralizar no meio da imagem */
- font-size: 30px; /* Tamanho da fonte */
- text-align: center; /* Centraliza o texto */
- color: white; /* Cor do texto */
+.container:hover {
+  transform: scale(1.1);
 }
 
-.imgliquid {
- position: relative; /* Posicionamento absoluto em relação ao .png */
- margin-bottom: 12%;
+/* Responsividade para tablets (largura de tela até 768px) */
+@media (max-width: 768px) {
+  .liquid, .faze {
+    width: 90%;
+    height: 30vh;
+  }
+
+  .container {
+    width: 45%;
+    margin: 1%;
+  }
+
+  .textoliquid, .textofaze {
+    font-size: 1.2rem;
+  }
 }
 
-.imgfaze {
- position: relative; /* Posicionamento absoluto em relação ao .png */
- margin-bottom: 14%;
+/* Responsividade para celulares (largura de tela até 480px) */
+@media (max-width: 480px) {
+  .liquid, .faze {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .container {
+    width: 90%;
+    margin: 2% auto;
+  }
+
+  .textoliquid, .textofaze {
+    font-size: 1rem;
+  }
 }
