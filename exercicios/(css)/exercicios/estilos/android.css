@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*
+#c5ebd6
+#81e1ad
+#3ddc84
+#2fa866
+#1a5c36
+#063d1e
+*/
+
+:root {
+ 
+}
+
+body{
+ background-color:#c5ebd6;
+
+}
+
+header > h1{
+ color: #2fa866;
+}
+
